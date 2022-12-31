@@ -10,7 +10,11 @@ const updateClock = () => {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-    demo.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`
+    if (distance < 0) {
+        demo.innerHTML = 'HAPPY NEW YEAR';
+    } else {
+        demo.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
 };
 
 setInterval(updateClock, 1000);
