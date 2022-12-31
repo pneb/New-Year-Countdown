@@ -35,6 +35,6 @@ body {
 }
 
 .content p::after {
-    content: ' left until January 1, 2023.';
+    content: ' left until January 1, 2024.';
     font-size: 1.5rem;
 }
