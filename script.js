@@ -1,6 +1,6 @@
 const demo = document.querySelector('#demo');
 
-const countDownDate = new Date('Jan 1, 2023 00:00:00').getTime();
+const countDownDate = new Date('Jan 1, 2024 00:00:00').getTime();
 
 const updateClock = () => {
     const now = new Date().getTime();
